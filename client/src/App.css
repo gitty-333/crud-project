@@ -1,0 +1,42 @@
+.HomePage{
+  display:grid;
+  grid-template-rows: 50px 1fr 30px;
+  min-height: 100vh;
+}
+header,footer{
+  background-color: black;
+  color: white;
+  display: grid;
+  place-content: center;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+.todosList{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.navigate a{
+  color: white;
+}
+.navigate{
+  display: flex;
+  gap: 10px;
+  font-size: 1.5 rem;
+}
+.navigate a.active{
+  color:black;
+  background-color: white;
+}
+.postsList{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.usersList{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
