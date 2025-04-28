@@ -14,7 +14,7 @@ const UsersItem=({users,fetchData})=>{
     }
 return<>
 <div className="onElement">
-<Link className="link" to={`/users/${users._id}`}><h1>{users.userName}</h1></Link>
+<Link className="link" to={`/users/${users._id}`}><h1>{users.name}</h1></Link>
 <div style={{display:"flex",gap:"25px"}}>
  <button style={{color: "red"}}  className="button" onClick={deleteUser}><MdDelete/></button>
  <button style={{color: "green"}}  className="button" onClick={()=>{navigate('/users/updateUser',{state:{users}})}}><RiPencilFill /></button>
